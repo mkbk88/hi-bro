@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "stunhook-work",
+  "name": "neichuan",
   "main": "src/cfapp.ts",
   "compatibility_date": "2025-08-26",
    "compatibility_flags": [
