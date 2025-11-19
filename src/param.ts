@@ -7,6 +7,7 @@ export interface RequestBody {
     domain_name?: string | null;
     public_host?: string | null;
     public_port?: string | null;
+    public_httpsport?: string | null;
     enable_ipv6?: string | null;
     enable_ssls?: string | null;
     header_back?: string | null;
@@ -40,6 +41,7 @@ export async function allParam(c: Context): Promise<RequestBody> {
         domain_name: await getParam(c, 'domain_name'),
         public_host: await getParam(c, 'public_host'),
         public_port: await getParam(c, 'public_port'),
+        public_httpsport: await getParam(c, 'public_httpsport'),
         enable_ipv6: await getParam(c, 'enable_ipv6'),
         enable_ssls: await getParam(c, 'enable_ssls'),
         header_back: await getParam(c, 'header_back'),
